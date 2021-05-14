@@ -1,7 +1,7 @@
 ﻿
 namespace Gatito
 {
-    partial class GameGatito
+    partial class Form1
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -68,7 +68,7 @@ namespace Gatito
             this.PicReiniciar.Size = new System.Drawing.Size(219, 66);
             this.PicReiniciar.TabIndex = 1;
             this.PicReiniciar.TabStop = false;
-            this.PicReiniciar.Click += new System.EventHandler(this.pictureBox1_Click);
+           
             // 
             // pictureBox1
             // 
@@ -78,7 +78,7 @@ namespace Gatito
             this.pictureBox1.Size = new System.Drawing.Size(116, 131);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+           
             // 
             // pictureBox2
             // 
@@ -106,7 +106,7 @@ namespace Gatito
             this.pictureBox3.Size = new System.Drawing.Size(129, 133);
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+         
             // 
             // label2
             // 

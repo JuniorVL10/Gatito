@@ -37,7 +37,7 @@ namespace Gatito
 
         public void IniciarJuego()
         {
-            //Iniciar Valores en Juego
+            //Iniciar Valores Juego
             turno = 1;
             Gato = new int[3, 3];
             YaHayGanador = false;
@@ -45,7 +45,7 @@ namespace Gatito
             picGanador.Image = Properties.Resources.f_0;
             FichasGato.Controls.Clear();
 
-            //Arreglos para mostrar las fichas y meter valores en una matriz
+            //Arreglos para mostrar las fichas 
             for (var i = 0; i < 3; i++)
             {
                 for (var j = 0; j < 3; j++)
@@ -137,28 +137,24 @@ namespace Gatito
                 YaHayGanador = true;
             }
 
-            //Validar cuando sea empate
-
-            //else
-            //bool Empate =true;
-
-            //for(var i=0; i< TamanioGato; i++)
-            //{ 
-            //for(var j=0; j< TamanioGato; j++)
-            //{
-            // if()
-            //Empate = false;
-            //}
-
-
-            //}
-            //if (Empate)
-
-
-            //{
-            //    MessageBox.Show("Esto es un empate ¡Reinicia el juego!");
-            //    IniciarJuego();
-            //}
+            else
+            {
+                bool Empate = true;
+                for (var i= 0; i < TamanioGato; i++)
+                {
+                    for(var j = 0; j < TamanioGato; j++)
+                    {
+                        if(Gato [i,j]==0)
+                        {
+                            Empate = false;
+                        }
+                    }
+                }
+                if (Empate)
+                {
+                    MessageBox.Show("Es un empate");
+                    IniciarJuego();
+                }
 
             if (YaHayGanador)
             {
